@@ -31,6 +31,28 @@ public class Test {
 		Selection.sort(clone3);
 		Example.show(clone3);
 		System.out.println("isSorted:"+Example.isSorted(clone3));
+		
+		//Merge
+		System.out.println("Merge:");
+		Comparable[] clone4=array.clone();
+		Merge.sort(clone4);
+		Example.show(clone4);
+		System.out.println("isSorted:"+Example.isSorted(clone4));
+		
+		//Quick
+		System.out.println("Quick:");
+		Comparable[] clone5=array.clone();
+		Quick.sort(clone5);
+		Example.show(clone5);
+		System.out.println("isSorted:"+Example.isSorted(clone5));
+		
+		//Heap
+		System.out.println("Heap:");
+		Comparable[] clone6=array.clone();
+		Heap.sort(clone6);
+		Example.show(clone6);
+		System.out.println("isSorted:"+Example.isSorted(clone6));
+		
 	}
 	
 	private static Comparable[] generateRandomArray(int bound,int N) {
